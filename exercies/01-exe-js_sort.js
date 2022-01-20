@@ -1,36 +1,43 @@
-// ONLY USE THE .sort() METHOD FOR THIS EXERCISE UNLESS MENTIONED
+/*// ONLY USE THE .sort() METHOD FOR THIS EXERCISE UNLESS MENTIONED
 
 //Exercise 1: Using the array (arrOfStrings), sort an array from shortest string to the longest.
 // DO NOT mutate the original array
 const arrOfStrings = ['cat', 'wolf', 'yo', 'animal'];
 
+
 const longestStr = (arr) => {
-   //your code...
+   function order (el1, el2){
+      return el1.length - el2.length;
+   }
+   
+   return arr.sort(order);
 }
 
 let longestStrings = longestStr(arrOfStrings)
-console.log(longestStrings)
+console.log("longestStrings RETURNS", longestStrings)
 
 //ANSWER should be ['yo', 'cat', 'wolf', 'animal']
 
 //Exercise 2: Using the same arr (arrOfStrings), sort its elements alphabetically.
 // DU NOT mutate the original array
+*/
 
 const arrOfStrings = ['cat', 'wolf', 'yo', 'animal'];
 
 const sortedStr = (arr) => {
-   //your code...
+   return arr.sort();
 }
 
 let sortedStrings = sortedStr(arrOfStrings)
-console.log(sortedStrings)
+console.log('sortedStrings RETURNS: ', sortedStrings);
+console.log("arrOfStrings REUTRNS: ", arrOfStrings);
 
 //ANSWER should be  ['animal', 'cat', 'wolf', 'yo']
 
 // COMPLEX EXERCISE 3: Sort the  objects in the array by age in ascending order,
 // if the age is the same sort them alphabetically in descending order
 // Please do not mutate the original array
-
+/*
 const people = [
   { name: 'Candice', age: 25 },
   { name: 'Tammy', age: 30 },
