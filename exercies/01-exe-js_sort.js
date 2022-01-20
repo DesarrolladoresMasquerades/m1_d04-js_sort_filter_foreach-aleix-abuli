@@ -28,7 +28,7 @@ const sortedStr = (arr) => {
    return arr.sort();
 }
 
-let sortedStrings = sortedStr(arrOfStrings)
+let sortedStrings = sortedStr(arrOfStrings);
 console.log('sortedStrings RETURNS: ', sortedStrings);
 console.log("arrOfStrings REUTRNS: ", arrOfStrings);
 
